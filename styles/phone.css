@@ -49,7 +49,7 @@
     }
 
     .card__text {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     /* **SECTION FORM** */
@@ -84,24 +84,30 @@
 
     @media (max-height:700px) {
         .header__text {
-            gap: 2rem;
+            gap: 4rem;
         }
 
         .header__title {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
 
         .header__p {
+            font-size: 1.4rem;
+        }
+
+        .btn {
             font-size: 1.2rem;
+            width: 18rem;
+            height: 4rem;
         }
 
         /* ***NAVBAR*** */
         .logo {
-            width: 10rem;
+            width: 11rem;
         }
 
         .nav__link {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         /* **SECTION LOVERS** */
@@ -120,7 +126,7 @@
         }
 
         .card__text {
-            font-size: .8rem;
+            font-size: .9rem;
         }
 
         /* ***Foooter*** */
