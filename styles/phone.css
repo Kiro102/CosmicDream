@@ -1,0 +1,147 @@
+@media (min-width:320px) and (max-width:480px) {
+    .header {
+        background-position-y: 0;
+        background-position-x: -20rem;
+    }
+
+    /* **NAVBAR** */
+    .nav__link {
+        font-size: 1.2rem;
+    }
+
+    /* ***HEADER TEXT** */
+    .header__text {
+        padding: 0;
+        align-items: center;
+    }
+
+    .header__p {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+
+    .header__title {
+        font-size: 2.3rem;
+    }
+
+    /* ***NAVBAR*** */
+    .logo {
+        width: 12rem;
+    }
+
+    /* ***MAIN*** */
+    /* **HERO SLIDER** */
+    /* ***HERO CARDSSS*** */
+    .cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 90%;
+        height: 25%;
+    }
+
+    .card__user {
+        width: 10rem;
+    }
+
+    .card__text {
+        font-size: 1.1rem;
+    }
+
+    /* **SECTION FORM** */
+    .form {
+        width: 80%;
+    }
+
+    .form__btn {
+        width: 30%;
+        font-size: .9rem;
+    }
+
+    /* ***Foooter*** */
+    .footer {
+        gap: 2rem;
+    }
+
+    .footer__menu {
+        overflow: hidden;
+        width: 70%;
+
+    }
+
+    .footer__link {
+        font-size: 1rem;
+    }
+
+    .footer__text {
+        font-size: .8rem;
+        width: 15%;
+    }
+
+    @media (max-height:700px) {
+        .header__text {
+            gap: 2rem;
+        }
+
+        .header__title {
+            font-size: 2rem;
+        }
+
+        .header__p {
+            font-size: 1.2rem;
+        }
+
+        /* ***NAVBAR*** */
+        .logo {
+            width: 10rem;
+        }
+
+        .nav__link {
+            font-size: 1rem;
+        }
+
+        /* **SECTION LOVERS** */
+        .hero__title {
+            font-size: 2.2rem;
+        }
+
+        /* ***cardddssss */
+        .card {
+            height: 26%;
+        }
+
+        .card__user {
+            width: 8rem;
+
+        }
+
+        .card__text {
+            font-size: .8rem;
+        }
+
+        /* ***Foooter*** */
+        .footer {
+            gap: 2rem;
+        }
+
+        .footer__menu {
+            overflow: hidden;
+            width: 70%;
+
+        }
+
+        .footer__link {
+            font-size: .8rem;
+        }
+
+        .footer__text {
+            font-size: .7rem;
+            width: 15%;
+        }
+    }
+
+}

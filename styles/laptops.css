@@ -1,0 +1,49 @@
+@media (min-width:769px) and (max-width:1200px) {
+    .header {
+        background-position-y: 0;
+    }
+
+    /* **NAVBAR** */
+    /* ***HEADER TEXT** */
+    .header__text {}
+
+    .header__p {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    /* ***MAIN*** */
+    /* **HERO SLIDER** */
+    /* ***HERO CARDSSS*** */
+    .card {
+        width: 45%;
+        height: 26%;
+    }
+
+    .card__user {
+        width: 12rem;
+    }
+
+    .card__text {
+        font-size: 1.3rem;
+    }
+
+    /* **SECTION FORM** */
+    .form {
+        width: 50%;
+    }
+
+    .form__btn {
+        width: 25%;
+    }
+
+    /* ***Foooter*** */
+    .footer__link {
+        font-size: 1.2rem;
+    }
+
+    .footer__text {
+        font-size: 1.1rem;
+    }
+
+}
