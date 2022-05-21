@@ -1,23 +1,94 @@
+@import url(/src/style.css);
+
 @media (min-width:320px) and (max-width:480px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .header {
-        background-position-y: 0;
-        background-position-x: -20rem;
+        /* background-position-y: 0; */
+        /* background-position-x: -20rem; */
     }
 
     /* **NAVBAR** */
-    .nav__link {
-        font-size: 1.2rem;
+    .nav {
+        flex-wrap: wrap;
+        position: relative;
     }
+
+    .nav__link {
+        font-size: 1.3rem;
+    }
+
+    .nav__menu {
+        /* display: none; */
+        order: 4;
+        flex-direction: column;
+        width: 40%;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        gap: 3rem;
+        padding: 4rem 2rem;
+        background-color: var(--color-black1);
+        transform: translateX(30rem);
+    }
+
+    .show {
+        transform: translateX(0);
+        transition: transform .5s ease;
+    }
+
+    .ocult {
+        transform: translateX(30rem);
+        transition: transform .5s ease;
+    }
+
+    .nav__off {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+    }
+
+    .nav__burger {
+        display: flex;
+        order: 3;
+    }
+
+    .nav__icon-burguer {
+        display: flex;
+    }
+
+    .nav__closer {
+        display: none;
+    }
+
+    .disabled {
+        display: none;
+    }
+
+    .enable {
+        display: flex;
+    }
+
 
     /* ***HEADER TEXT** */
     .header__text {
         padding: 0;
         align-items: center;
+        gap: 4rem;
     }
 
     .header__p {
-        font-size: 1.8rem;
-        width: 90%;
+        font-size: 1.5rem;
+        width: 95%;
+        height: auto;
+
     }
 
     .header__title {
@@ -30,8 +101,17 @@
     }
 
     /* ***MAIN*** */
+    .hero__title {
+        font-size: 2rem;
+    }
+
     /* **HERO SLIDER** */
+
     /* ***HERO CARDSSS*** */
+    .hero__content--auto-height {
+        height: auto;
+    }
+
     .cards {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -49,7 +129,7 @@
     }
 
     .card__text {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     /* **SECTION FORM** */
@@ -57,9 +137,24 @@
         width: 80%;
     }
 
+    .form__img {
+        width: 15rem;
+    }
+
+    .form__label {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+
+    }
+
+    .form__input {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
     .form__btn {
-        width: 30%;
-        font-size: .9rem;
+        width: 40%;
+        font-size: 1rem;
     }
 
     /* ***Foooter*** */
@@ -82,22 +177,45 @@
         width: 15%;
     }
 
+    /* *****SECTION CONTACT SUPPORT***** */
+    .hero__content--column-phone {
+        flex-direction: column;
+    }
+
+    .hero__support-img {
+        order: 1;
+        width: 90%;
+        padding: 0;
+
+    }
+
+    .hero__text-support {
+        order: 2;
+    }
+
+
+    .hero__text {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    /* ***MEDIA FOR HEIGHT SMALL PHONES*** */
     @media (max-height:700px) {
         .header__text {
             gap: 4rem;
         }
 
         .header__title {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
         }
 
         .header__p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         .btn {
-            font-size: 1.2rem;
-            width: 18rem;
+            font-size: 1.1rem;
+            width: 16rem;
             height: 4rem;
         }
 
@@ -116,8 +234,13 @@
         }
 
         /* ***cardddssss */
+        .cards {
+            /* overflow-y: scroll; */
+        }
+
         .card {
-            height: 26%;
+            width: 80%;
+            height: 28%;
         }
 
         .card__user {
@@ -126,7 +249,40 @@
         }
 
         .card__text {
-            font-size: .9rem;
+            font-size: .8rem;
+            /* width: 90%; */
+
+        }
+
+        /* **SECTION FORM** */
+        .form {
+            width: 70%;
+        }
+
+        .form__img {
+            width: 10rem;
+        }
+
+        .form__label {
+            font-size: 1.5rem;
+            margin-left: 2rem;
+
+        }
+
+        .form__input {
+            width: 90%;
+            font-size: 1rem;
+
+        }
+
+        .form__btn {
+            width: 40%;
+            font-size: 1rem;
+        }
+
+        /* *****SECTION CONTACT SUPPORT***** */
+        .hero__text {
+            font-size: 1.5rem;
         }
 
         /* ***Foooter*** */

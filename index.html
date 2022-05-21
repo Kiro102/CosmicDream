@@ -5,119 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/laptops.css">
-    <link rel="stylesheet" href="styles/phone.css">
-    <title>CosmicDream</title>
+    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/styles/media_form.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <title>Login</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav__logo">
-                <img class="logo" src="assets/Logo.svg" alt="">
-            </div>
-            <ul class="nav__menu">
-                <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Lovers</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Comment</a></li>
-            </ul>
-        </nav>
-        <div class="header__text">
-            <h1 class="header__title">
-                The Space For The Peolple
-            </h1>
-            <p class="header__p">
-                La mejor manera de experimentar la vasta extensión del espacio es a través de imágenes de él. La NASA y
-                otras organizaciones trabajan con Space para conseguirlo. Utilizando la tecnología de satélites más
-                avanzada, Space permite a la gente mirar al cielo azul con una nueva perspectiva, o a las nubes como
-                nunca antes. Esta empresa ofrece las imágenes espaciales más actuales disponibles en la web
-            </p>
-            <a class="btn btn--before" href="#hero_">Disfruta de tu viaje</a>
-        </div>
-    </header>
-    <main class="main">
-        <section class="hero" id="hero_">
-            <ul class="hero__slider">
-                <li class="hero__item"><img class="hero__img" src="assets/space_1.jpg" alt=""></li>
-                <li class="hero__item"><img class=" hero__img" src="assets/space_2.jpg" alt=""></li>
-                <li class="hero__item"><img class=" hero__img" src="assets/space_3.jpg" alt=""></li>
-                <li class="hero__item"><img class=" hero__img" src="assets/space_4.jpg" alt=""></li>
-                <li class="hero__item"><img class=" hero__img" src="assets/space_1.jpg" alt=""></li>
-            </ul>
-            <div class="hero__link-container">
-                <a href="#" class="hero__link-text">View More</a>
-                <svg class="arrow_link" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 9l6 6 6-6" /></svg>
-            </div>
-        </section>
-        </div>
-        </section>
-        <section class="hero">
-            <div class="hero__content  hero__content--column">
-                <h2 class="hero__title">Space Lovers</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img class="card__user" src="assets/man.svg" alt="">
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                            quisquam nihil ullam. Illo
-                            est et a dolore fugit mollitia officiis ex eaque repellendus ipsam praesentium, itaque earum
-                            delectus dignissimos officia.</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__user" src="assets/woman.svg" alt="">
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                            quisquam nihil ullam. Illo
-                            est et a dolore fugit mollitia officiis ex eaque repellendus ipsam praesentium, itaque earum
-                            delectus dignissimos officia.</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__user" src="assets/woman.svg" alt="">
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                            quisquam nihil ullam. Illo
-                            est et a dolore fugit mollitia officiis ex eaque repellendus ipsam praesentium, itaque earum
-                            delectus dignissimos officia.</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__user" src="assets/man.svg" alt="">
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                            quisquam nihil ullam. Illo
-                            est et a dolore fugit mollitia officiis ex eaque repellendus ipsam praesentium, itaque earum
-                            delectus dignissimos officia.</p>
-                    </div>
+    <main class="form_container">
+        <form class="form-login">
+            <div class="form_contents">
+                <div class="login-signup">
+                    <h1>Inicia Sesión</h1>
+                    <!-- <a href="#">Login</a>
+                    <a href="#">Sign-up</a> -->
+                </div>
+                <div class="inputs_login">
+                    <label class="labels" for="mail">Ingresa tu correo:</label>
+                    <input class="inputs" id="mail" type="email" placeholder="Mail">
+                    <label class="labels" for="pass">Ingresa tu contraseña:</label>
+                    <input class="inputs" id="pass" type="password" placeholder="Contraseña">
+                </div>
+                <div class="form_buttons">
+                    <a href="/src/main-page.html"><button class="btn_input" type="button">Inciar Sesión</button></a>
+                    <a href="/register.html"><button class="btn_index" type="button">No tienes cuenta?
+                            Restistrate</button></a>
                 </div>
             </div>
-        </section>
-        <section class="hero">
-            <div class="hero__content hero__content--center-all hero--column">
-                <h2 class="hero__title hero--self-center">Dejanos tú opinion del espacio</h2>
-                <form action="" class="form">
-                    <label class="form__label" for="name">Nombre:</label>
-                    <input class="form__input" type="text" id="name">
-                    <label class="form__label" for="mail">Email:</label>
-                    <input class="form__input" type="email" name="" id="mail">
-                    <label class="form__label" for="text-area">Tu opinión:</label>
-                    <textarea class="form__input form__text" maxlength="500" name="" id="text-area" cols="30"
-                        rows="10"></textarea>
-                    <input class="form__btn" type="submit" value="send">
-                </form>
-            </div>
-        </section>
-        <footer class="footer">
-            <ul class="footer__menu">
-                <li class="footer__item"> <a href="#" class="footer__link">Twitter</a></li>
-                <li class="footer__item"> <a href="#" class="footer__link">Facebook</a></li>
-                <li class="footer__item"> <a href="#" class="footer__link">Instagram</a></li>
-                <li class="footer__item"> <a href="#" class="footer__link">Likedin</a></li>
-            </ul>
-            <span class="footer__text">© CosmicDream 2022. All rights reserved.</span>
-        </footer>
+        </form>
     </main>
-    <footer>
-
-    </footer>
-
 </body>
 
 </html>

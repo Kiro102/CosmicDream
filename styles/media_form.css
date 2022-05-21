@@ -1,0 +1,30 @@
+@media (min-width:405px) and (max-width:720px) {
+
+    /* **Loginn */
+    .form-login {
+        width: 35rem;
+    }
+
+    /* ******Register******** */
+    .form-register {
+        width: 38rem;
+    }
+}
+
+
+
+@media (min-width:320px) and (max-width:405px) {
+    * {
+        scroll-snap-type: y mandatory;
+    }
+
+    /* **Loginn */
+    .form-login {
+        width: 30rem;
+    }
+
+    /* **Register */
+    .form-register {
+        width: 30rem;
+    }
+}
