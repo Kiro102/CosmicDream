@@ -107,6 +107,11 @@ a {
     background-color: var(--color-white);
 }
 
+/* ***NAV BUTTONS*** */
+.nav__buttons {
+    display: none;
+}
+
 .nav__burger {
     display: none;
 }
@@ -134,11 +139,12 @@ a {
     transition: transform .5s ease;
 }
 
+
+
 /* ***MODIFICADORES DEL NAV__LINK */
 .nav__link--big {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
-
 
 .nav__link--off-after:hover::after {
     width: 0%;
@@ -188,7 +194,7 @@ a {
     }
 
     to {
-        width: 35%
+        width: 50%
     }
 }
 
