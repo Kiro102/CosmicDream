@@ -13,6 +13,7 @@
         position: fixed;
     }
 
+
     .nav__link {
         font-size: 1.3rem;
     }
@@ -30,7 +31,7 @@
         gap: 3rem;
         padding: 4rem 2rem;
         background-color: var(--color-black1);
-        transform: translateX(40rem);
+        transform: translateX(50rem);
     }
 
     /* ***NAV BUTTONS*** */
@@ -47,7 +48,7 @@
     }
 
     .ocult {
-        transform: translateX(40rem);
+        transform: translateX(50rem);
         transition: transform .5s ease;
     }
 
