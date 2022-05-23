@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
-    <link rel="stylesheet" href="/styles/laptops.css">
     <link rel="stylesheet" href="/styles/phone.css">
+    <link rel="stylesheet" href="/styles/ipad-etc.css">
+    <link rel="stylesheet" href="/styles/laptops.css">
     <link rel="stylesheet" href="/styles/large-desk.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>CosmicDream</title>
@@ -22,9 +23,8 @@
             <li class="nav__item"><a href="https://www.nasa.gov/multimedia/imagegallery/iotd.html"
                     class="nav__link">Gallery</a></li>
             <li class="nav__item"><a href="#lovers_" class="nav__link">Lovers</a></li>
-            <li class="nav__item"><a href="#comment_" class="nav__link">Comment</a></li>
+            <!-- <li class="nav__item"><a href="#comment_" class="nav__link">Comment</a></li> -->
             <li class="nav__item"><a href="#contact_" class="nav__link">Contact</a></li>
-
         </ul>
         <div class="nav__buttons">
             <div class="nav__off"><a href="/index.html"
@@ -38,7 +38,6 @@
             </div>
 
         </div>
-
     </nav>
     <header class="header">
 
@@ -61,7 +60,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero" id="hero_">
+        <div class="hero" id="hero_">
             <ul class="hero__slider">
                 <li class="hero__item"><img class="hero__img" src="/assets/space_1.jpg" alt=""></li>
                 <li class="hero__item"><img class=" hero__img" src="/assets/space_2.jpg" alt=""></li>
@@ -75,10 +74,8 @@
                     fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 9l6 6 6-6" /></svg>
             </div>
-        </section>
         </div>
-        </section>
-        <section class="hero" id="lovers_ hero__content--auto-height">
+        <section class="hero" id="lovers_">
             <div class="hero__content  hero__content--column">
                 <h2 class="hero__title">Space Lovers</h2>
                 <div class="cards">
@@ -113,22 +110,18 @@
                 </div>
             </div>
         </section>
-        <section class="hero" id="comment_">
+        <!-- <section class="hero" id="comment_">
             <div class="hero__content hero__content--center-all hero--column">
                 <h2 class="hero__title hero--self-center">Leave us your opinion of the space</h2>
                 <form action="" class="form">
                     <img class="form__img" src="/assets/woman.svg" alt="">
-                    <!-- <label class="form__label" for="name">Nombre:</label>
-                    <input class="form__input" type="text" id="name">
-                    <label class="form__label" for="mail">Email:</label>
-                    <input class="form__input" type="email" name="" id="mail"> -->
                     <label class="form__label" for="text-area">Your opinion:</label>
-                    <textarea class="form__input form__text" maxlength="210" name="" id="text-area" cols="30" rows="10"
+                    <textarea class="form__input form__text" maxlength="210" name="" id="text-area"
                         placeholder="Comment..."></textarea>
                     <input class="form__btn" type="submit" value="send">
                 </form>
             </div>
-        </section>
+        </section> -->
         <section class="hero" id="contact_">
             <div class="hero__content hero__content--center-all hero__content--column-phone">
                 <div class="hero__text-support">
@@ -143,18 +136,15 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <ul class="footer__menu">
-                <li class="footer__item"> <a href="#" class="footer__link">Twitter</a></li>
-                <li class="footer__item"> <a href="#" class="footer__link">Facebook</a></li>
-                <li class="footer__item"> <a href="#" class="footer__link">Instagram</a></li>
-                <li class="footer__item"> <a href="#" class="footer__link">Likedin</a></li>
-            </ul>
-            <span class="footer__text">© CosmicDream 2022. All rights reserved.</span>
-        </footer>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__item"> <a href="#" class="footer__link">Twitter</a></li>
+            <li class="footer__item"> <a href="#" class="footer__link">Facebook</a></li>
+            <li class="footer__item"> <a href="#" class="footer__link">Instagram</a></li>
+            <li class="footer__item"> <a href="#" class="footer__link">Likedin</a></li>
+        </ul>
+        <span class="footer__text">© CosmicDream 2022. All rights reserved.</span>
     </footer>
     <script src="/index.js"></script>
 </body>

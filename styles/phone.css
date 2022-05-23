@@ -10,7 +10,7 @@
     /* **NAVBAR** */
     .nav {
         flex-wrap: wrap;
-        position: relative;
+        position: fixed;
     }
 
     .nav__link {
@@ -18,10 +18,10 @@
     }
 
     .nav__menu {
-        /* display: none; */
         order: 4;
         flex-direction: column;
         width: 40%;
+        width: 100%;
         justify-content: flex-end;
         align-items: center;
         position: absolute;
@@ -30,7 +30,7 @@
         gap: 3rem;
         padding: 4rem 2rem;
         background-color: var(--color-black1);
-        transform: translateX(30rem);
+        transform: translateX(40rem);
     }
 
     /* ***NAV BUTTONS*** */
@@ -47,7 +47,7 @@
     }
 
     .ocult {
-        transform: translateX(30rem);
+        transform: translateX(40rem);
         transition: transform .5s ease;
     }
 
@@ -115,7 +115,12 @@
         font-size: 2rem;
     }
 
+    /* ***HERO BLOCK*** */
     /* **HERO SLIDER** */
+    /* ***VIEW LINK** */
+    .hero__link-text {
+        font-size: 1.5rem;
+    }
 
     /* ***HERO CARDSSS*** */
     .hero__content--auto-height {
@@ -142,9 +147,10 @@
         font-size: 1rem;
     }
 
-    /* **SECTION FORM** */
+    /* **SECTION FORM**
     .form {
         width: 80%;
+        max-height: 800px;
     }
 
     .form__img {
@@ -157,6 +163,7 @@
 
     }
 
+
     .form__input {
         width: 90%;
         font-size: 1.2rem;
@@ -165,7 +172,28 @@
     .form__btn {
         width: 40%;
         font-size: 1rem;
+    } */
+    /* *****SECTION CONTACT SUPPORT***** */
+    .hero__content--column-phone {
+        flex-direction: column;
     }
+
+    .hero__support-img {
+        order: 1;
+        width: 90%;
+        padding: 0;
+
+    }
+
+    .hero__text-support {
+        order: 2;
+    }
+
+    .hero__text {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
 
     /* ***Foooter*** */
     .footer {
@@ -187,27 +215,6 @@
         width: 15%;
     }
 
-    /* *****SECTION CONTACT SUPPORT***** */
-    .hero__content--column-phone {
-        flex-direction: column;
-    }
-
-    .hero__support-img {
-        order: 1;
-        width: 90%;
-        padding: 0;
-
-    }
-
-    .hero__text-support {
-        order: 2;
-    }
-
-
-    .hero__text {
-        width: 100%;
-        font-size: 1.8rem;
-    }
 
     /* ***MEDIA FOR HEIGHT SMALL PHONES*** */
     @media (max-height:700px) {
@@ -238,19 +245,19 @@
             font-size: 1.1rem;
         }
 
+        .nav__link--big {
+            font-size: 1.4rem;
+        }
+
         /* **SECTION LOVERS** */
         .hero__title {
             font-size: 2.2rem;
         }
 
         /* ***cardddssss */
-        .cards {
-            /* overflow-y: scroll; */
-        }
 
         .card {
             width: 80%;
-            height: 28%;
         }
 
         .card__user {
@@ -260,8 +267,6 @@
 
         .card__text {
             font-size: .8rem;
-            /* width: 90%; */
-
         }
 
         /* **SECTION FORM** */
