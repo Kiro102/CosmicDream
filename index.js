@@ -1,6 +1,11 @@
 const burguerBars = document.getElementById("burguer");
 const navMenu = document.getElementById("nav__menu");
 const closer = document.getElementById("close");
+const linkGallery = document.getElementById("link_gallery");
+const linkLovers = document.getElementById("link_lovers");
+const linkContact = document.getElementById("link_contact");
+
+//añado clases para mover el menu fuera del body
 burguerBars.addEventListener("click", function () {
   navMenu.classList.toggle("show");
   navMenu.classList.remove("ocult");
@@ -13,4 +18,17 @@ closer.addEventListener("click", function () {
   closer.classList.toggle("disabled");
   closer.classList.remove("enable");
   burguerBars.classList.remove("disabled");
+});
+
+//Cierre de menu cuando toco un link
+linkGallery.addEventListener("click", function () {
+  closer.click();
+});
+
+linkLovers.addEventListener("click", function () {
+  closer.click();
+});
+
+linkContact.addEventListener("click", function () {
+  closer.click();
 });
