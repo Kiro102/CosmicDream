@@ -1,19 +1,12 @@
-/* @import url(/src/style.css); */
-
 @media (min-width:600px) and (max-width:900px) {
 
     /* ***NAVBAR** */
-    .nav {
-        position: fixed;
-    }
-
-
     .logo {
         width: 10rem;
     }
 
     .nav__menu {
-        padding-right: 1rem;
+        padding-right: 2rem;
     }
 
     /* ***HEADERR*** */
@@ -108,9 +101,6 @@
 
         /* ***HERO CARDSSS** * */
         .cards {
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
             gap: 1.5rem;
         }
 

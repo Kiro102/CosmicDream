@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    /* border: 2px solid red; */
 }
 
 html,
@@ -49,7 +48,7 @@ a {
     align-items: center;
     height: 6rem;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     backdrop-filter: blur(3px);
     z-index: 3;
@@ -155,8 +154,8 @@ a {
     font-family: var(--font-poppins);
     font-weight: var(--semibold);
     font-size: 3.5rem;
-    /* animation: blink-caret .75s step-end infinite, typing 3.5s steps(40, end);
-    border-right: .15rem solid #fff; */
+    animation: blink-caret .75s step-end infinite, typing 3.5s steps(40, end);
+    border-right: .15rem solid #fff;
     overflow: hidden;
     letter-spacing: .15rem;
     white-space: nowrap;
@@ -419,71 +418,6 @@ a {
     font-size: 1.5rem;
     color: var(--color-text);
     width: 60%;
-}
-
-/* *****SECTION FORM** */
-.hero--self-center {
-    align-self: center;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #181818;
-    align-items: center;
-    height: 60%;
-    width: 35%;
-    gap: 0rem;
-}
-
-.form__img {
-    width: 20rem;
-}
-
-.form__label {
-    font-size: 2rem;
-    font-family: var(--font-poppins);
-    align-self: flex-start;
-    margin-left: 5rem;
-    color: #fff;
-}
-
-.form__input {
-    width: 60%;
-    height: 7%;
-    outline: none;
-    padding: 1rem .2rem;
-    font-family: var(--font-monserrat);
-    font-weight: var(--thin);
-    font-size: 1.5rem;
-    letter-spacing: .2rem;
-    resize: none;
-
-}
-
-.form__text {
-    height: 20%;
-}
-
-.form__btn {
-    height: 7%;
-    width: 20%;
-    border: none;
-    text-transform: uppercase;
-    transition: .2s;
-    cursor: pointer;
-}
-
-.form__btn:hover {
-    background-color: #000;
-    color: #fff;
-
-
-}
-
-.form__btn:active {
-    border: .1rem solid #fff;
 }
 
 /* *****SECTION CONTACT SUPPORT***** */
